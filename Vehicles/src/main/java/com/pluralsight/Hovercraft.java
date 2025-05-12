@@ -2,19 +2,19 @@ package com.pluralsight;
 
 public class Hovercraft extends Vehicle{
 
-    private int numberOfFans;
+    private int numberOfBlades;
     private int maxAltitude;
     private boolean canOperateOnWater;
 
 
     //Getters and Setters:
 
-    public int getNumberOfFans() {
-        return numberOfFans;
+    public int getNumberOfBlades() {
+        return numberOfBlades;
     }
 
     public void setNumberOfBlades(int numberOfFans) {
-        this.numberOfFans = numberOfFans;
+        this.numberOfBlades = numberOfFans;
     }
 
     public int getMaxAltitude() {

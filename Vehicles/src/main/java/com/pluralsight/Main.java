@@ -21,17 +21,19 @@ public class Main {
         hovercraft.setFuelCapacity(7);
         hovercraft.setMaxAltitude(10000);
         hovercraft.setNumberOfBlades(4);
+        hovercraft.setCanOperateOnWater(true);
 
         Moped mopedRide = new Moped();
         mopedRide.setVehicleMake("HHH");
         mopedRide.setVehicleModel("VINO 50");
+        mopedRide.setColor("Blue");
+        mopedRide.setFuelCapacity(5);
         mopedRide.setStorage(true);
         mopedRide.setPassengerSeat(true);
         mopedRide.setHasPedals(false);
         mopedRide.setEngineCC(49);
         mopedRide.setStreetLegal(true);
-        mopedRide.setColor("Blue");
-        mopedRide.setFuelCapacity(5);
+
 
         SemiTruck semiTruck = new SemiTruck();
         semiTruck.setMaxLoadBearing(80000);
