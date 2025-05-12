@@ -10,6 +10,18 @@ public class Vehicle {
     private int cargoCapacity;
     private int fuelCapacity;
 
+    //Section 2-2: Working with Constructors
+
+    public Vehicle(String color, String vehicleMake, String vehicleModel, int odometer, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        this.color = color;
+        this.vehicleMake = vehicleMake;
+        this.vehicleModel = vehicleModel;
+        this.odometer = odometer;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+    }
+
 
     //Getters and Setters:
 

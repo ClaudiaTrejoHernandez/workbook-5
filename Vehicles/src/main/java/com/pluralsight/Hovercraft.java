@@ -7,6 +7,16 @@ public class Hovercraft extends Vehicle{
     private boolean canOperateOnWater;
 
 
+    //Super Constructor
+
+    public Hovercraft(String color, String vehicleMake, String vehicleModel, int odometer, int numberOfPassengers, int cargoCapacity, int fuelCapacity, int numberOfBlades, int maxAltitude, boolean canOperateOnWater) {
+        super(color, vehicleMake, vehicleModel, odometer, numberOfPassengers, cargoCapacity, fuelCapacity);
+        this.numberOfBlades = numberOfBlades;
+        this.maxAltitude = maxAltitude;
+        this.canOperateOnWater = canOperateOnWater;
+    }
+
+
     //Getters and Setters:
 
     public int getNumberOfBlades() {

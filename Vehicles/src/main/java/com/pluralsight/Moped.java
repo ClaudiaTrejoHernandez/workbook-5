@@ -3,10 +3,21 @@ package com.pluralsight;
 public class Moped extends Vehicle{
 
         private boolean storage;
-        private boolean passengerSeat;
         private boolean hasPedals;
         private int engineCC;
         private boolean isStreetLegal;
+
+
+        //Super Constructor:
+
+        public Moped(String color, String vehicleMake, String vehicleModel, int odometer, int numberOfPassengers, int cargoCapacity, int fuelCapacity, boolean storage, boolean hasPedals, int engineCC, boolean isStreetLegal) {
+                super(color, vehicleMake, vehicleModel, odometer, numberOfPassengers, cargoCapacity, fuelCapacity);
+                this.storage = storage;
+                this.hasPedals = hasPedals;
+                this.engineCC = engineCC;
+                this.isStreetLegal = isStreetLegal;
+        }
+
 
         //Getters and Setters:
 
@@ -16,14 +27,6 @@ public class Moped extends Vehicle{
 
         public void setStorage(boolean storage) {
                 this.storage = storage;
-        }
-
-        public boolean isPassengerSeat() {
-                return passengerSeat;
-        }
-
-        public void setPassengerSeat(boolean passengerSeat) {
-                this.passengerSeat = passengerSeat;
         }
 
         public boolean isHasPedals() {

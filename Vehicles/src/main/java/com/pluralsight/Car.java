@@ -7,6 +7,16 @@ public class Car extends Vehicle{
     private String bodyStyle;
 
 
+    //Super constructor:
+
+    public Car(String color, String vehicleMake, String vehicleModel, int odometer, int numberOfPassengers, int cargoCapacity, int fuelCapacity, int numberOfDoors, boolean isElectric, String bodyStyle) {
+        super(color, vehicleMake, vehicleModel, odometer, numberOfPassengers, cargoCapacity, fuelCapacity);
+        this.numberOfDoors = numberOfDoors;
+        this.isElectric = isElectric;
+        this.bodyStyle = bodyStyle;
+    }
+
+
     //Getters and Setters:
 
     public int getNumberOfDoors() {
