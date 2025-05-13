@@ -13,6 +13,10 @@ public class Main {
         assets.add(new Vehicle("Regular Car","01-02-2024",22000,"Hyundai Elantra",2023,17000));
         assets.add(new Vehicle("Vacation Car","01-23-2025",27000,"Toyota Camry",2025,5000));
 
+        assets.add(new Vehicle("Fun Car","07-1-2020",75000,"Chevrolet Corvette", 1969,85000));
+
+        Asset asset = new Asset("Test");
+
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
             System.out.println("Acquired On: " + asset.getDateAcquired());
@@ -27,7 +31,7 @@ public class Main {
                 Vehicle vehicle = (Vehicle) asset;
                 System.out.println("Make & Model: " + vehicle.getMakeModel());
             }
-            System.out.println("-----------------------------------");
+            System.out.println("------------------------------------------------");
 
         }
 

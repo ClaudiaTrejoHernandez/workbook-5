@@ -1,10 +1,10 @@
 package com.pluralsight;
 
-public class Asset {
+public abstract class Asset {
 
-    private String description;
-    private String dateAcquired;
-    private double originalCost;
+    protected String description;
+    protected String dateAcquired;
+    protected double originalCost;
 
     //Constructor
     public Asset(String description, String dateAcquired, double originalCost) {
@@ -40,7 +40,5 @@ public class Asset {
     }
 
     //Method to return original cost
-    public double getValue(){
-        return originalCost;
-    }
+    public abstract double getValue();
 }
