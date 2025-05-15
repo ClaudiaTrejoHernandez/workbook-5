@@ -15,7 +15,8 @@ public class Main {
 
         assets.add(new Vehicle("Fun Car","07-1-2020",75000,"Chevrolet Corvette", 1969,85000));
 
-        Asset asset = new Asset("Test");
+        assets.add(new Cash("Piggy bank moneys","01-01-2015",0.0,2000));
+
 
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
